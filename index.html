@@ -3,7 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Jomtien 1 Night Trip Plan</title>
+<title>Jomtien 1 Night Trip</title>
+
 <style>
 body {
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
@@ -11,34 +12,57 @@ body {
   background: #f7f7f7;
   color: #333;
 }
+
 .header {
   background: #111;
   color: #fff;
   padding: 20px;
   text-align: center;
 }
+
 .section {
   padding: 16px;
 }
+
 .card {
   background: #fff;
   border-radius: 12px;
   padding: 16px;
-  margin-bottom: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  margin-bottom: 14px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.06);
 }
+
 .time {
   font-weight: bold;
   color: #ff7a00;
 }
+
+.map {
+  width: 100%;
+  height: 200px;
+  border-radius: 10px;
+  margin-top: 10px;
+  border: none;
+}
+
+.button-group {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
 button {
-  margin-top: 8px;
-  padding: 10px;
+  padding: 10px 12px;
   border: none;
   border-radius: 8px;
   background: #ff7a00;
   color: white;
   font-size: 14px;
+}
+
+.secondary {
+  background: #555;
 }
 </style>
 </head>
@@ -54,32 +78,27 @@ button {
 
   <div class="card">
     <div class="time">🚗 SATURDAY – 10:30</div>
-    <p>ออกจาก Merlin Tower</p>
-    <p>ใช้เวลาเดินทาง ~2–2.5 ชม.</p>
+    <p>ออกจาก Merlin Tower (~2–2.5 ชม.)</p>
   </div>
 
   <div class="card">
     <div class="time">🦐 13:00</div>
-    <h3>จิ๊บซีฟู้ด (Lunch Stop)</h3>
-    <p>กินมื้อหลักก่อนเข้าจอมเทียน</p>
+    <h3>จิ๊บซีฟู้ด</h3>
     <p><b>งบ:</b> 700–1,000 บาท / 2 คน</p>
-    <p><b>เมนูแนะนำ:</b><br>
-      - ปูผัดผงกะหรี่<br>
-      - กุ้งทอดกระเทียม<br>
-      - ต้มยำทะเล<br>
-      - ข้าวผัดปู
-    </p>
-    <button onclick="window.open('https://maps.app.goo.gl/ScWaWA2R6YWrzwCL6')">เปิด Google Map</button>
+    <p>ปูผัดผงกะหรี่ • กุ้งทอดกระเทียม • ต้มยำทะเล</p>
+
+    <iframe class="map"
+      src="https://maps.google.com/maps?q=Jib%20Seafood%20Pattaya&t=&z=15&ie=UTF8&iwloc=&output=embed">
+    </iframe>
+
+    <div class="button-group">
+      <button onclick="window.open('https://maps.app.goo.gl/ScWaWA2R6YWrzwCL6')">📍 เปิดแผนที่</button>
+    </div>
   </div>
 
   <div class="card">
     <div class="time">🏨 14:30</div>
-    <p>Check-in โรงแรม Tevan Jomtien Pattaya</p>
-  </div>
-
-  <div class="card">
-    <div class="time">☕ 16:00</div>
-    <p>พักผ่อน / คาเฟ่ / งีบ</p>
+    <p>Check-in: Tevan Jomtien Pattaya</p>
   </div>
 
   <div class="card">
@@ -98,18 +117,24 @@ button {
 
   <div class="card">
     <div class="time">🦀 11:00</div>
-    <h3>Option 1: ปูเป็น ซีฟู้ด (แนะนำสุด)</h3>
-    <p>ซีฟู้ดจัดเต็ม ริมทะเล ฟีลปิดทริป</p>
-    <p><b>งบ:</b> 800–1,200 บาท / 2 คน</p>
-    <button onclick="window.open('https://maps.app.goo.gl/4c4rKk6PZc3K9q1H6')">เปิด Google Map</button>
+    <h3>Finn Seafood</h3>
+    <p><b>งบ:</b> 700–1,100 บาท / 2 คน</p>
+    <p>🔥 ซีฟู้ดจุก + คุ้ม + รีวิวดี</p>
+
+    <iframe class="map"
+      src="https://maps.google.com/maps?q=Finn%20Seafood%20Pattaya&t=&z=15&ie=UTF8&iwloc=&output=embed">
+    </iframe>
+
+    <div class="button-group">
+      <button onclick="window.open('https://maps.app.goo.gl/ja7TKUa37weTrDaa6?g_st=com.google.maps.preview.copy')">📍 เปิดแผนที่</button>
+      <button class="secondary" onclick="window.open('tel:0853227325')">📞 โทร 085-322-7325</button>
+      <button class="secondary" onclick="window.open('https://www.facebook.com/profile.php?id=61552201112418&mibextid=LQQJ4d')">📘 เพจร้าน</button>
+    </div>
   </div>
 
   <div class="card">
-    <div class="time">🦐 11:00</div>
-    <h3>Option 2: ลุงไสว ซีฟู้ด</h3>
-    <p>Local คุ้ม รสกลาง ๆ กินง่าย</p>
-    <p><b>งบ:</b> 700–1,000 บาท / 2 คน</p>
-    <button onclick="window.open('https://maps.app.goo.gl/k9Xk9s7Yw2Y7kqJH9')">เปิด Google Map</button>
+    <div class="time">🚗 12:30</div>
+    <p>ขับกลับกรุงเทพ</p>
   </div>
 
 </div>
